@@ -80,6 +80,12 @@ public class Persona {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public static void VerificarDNI(String dni) {
+		if (dni == null || !dni.matches("\\d{8}")) {
+			throw new ExVerificarDNI("El DNI debe contener exactamente 8 caracteres numericos");
+		}
+	}
 	
 	//metodo toString()
 	@Override
