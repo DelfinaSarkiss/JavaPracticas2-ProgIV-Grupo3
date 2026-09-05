@@ -2,7 +2,7 @@ package ejercicio1;
 
 import java.time.LocalDate;
 
-public class Empleado extends Persona{
+public class Empleado extends Persona implements Comparable<Empleado>{
 
 	private static int contadorLegajo = 1000;
 	private final int legajo;
@@ -42,5 +42,9 @@ public class Empleado extends Persona{
 	@Override
 	public String toString() {
 		return "Empleado [legajo=" + legajo + ", puesto=" + puesto + ", datosPersona=" + super.toString() + "]";
+	}
+	@Override
+	public int compareTo(Empleado o) {
+		return Integer.compare(this.legajo, o.legajo);
 	}
 }
