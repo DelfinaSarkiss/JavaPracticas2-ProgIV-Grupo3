@@ -1,6 +1,6 @@
 package ejercicio2;
 
-public interface Edificio {
+public interface IEdificio {
 
 	double getSuperficieEdificio();
 }

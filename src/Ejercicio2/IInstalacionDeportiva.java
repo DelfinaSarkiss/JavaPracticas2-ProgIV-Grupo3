@@ -1,6 +1,6 @@
 package ejercicio2;
 
-public interface InstalacionDeportiva {
+public interface IInstalacionDeportiva {
 
 	int getTipoDeInstalacion();
 }
